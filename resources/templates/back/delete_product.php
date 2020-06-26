@@ -1,0 +1,22 @@
+<?php require_once("../../config.php"); 
+
+
+ if (isset($_GET['id'])) {
+
+$id = $_GET['id'];
+
+$query = query("DELETE FROM products WHERE product_id=" . escape_string($id). " ");
+confirm($query);
+set_message("Product Deleted");
+redirect("../../../public/admin/index.php?products");
+
+//beacuse the product page is defined in the index
+ }else{
+
+set_message("Product was not Deleted");
+redirect("../../../public/admin/index.php?products");
+}
+
+
+
+ ?>
