@@ -4,12 +4,12 @@
 
 A simple php e-commerce website, part of the course:
 
-PHP for Begginners: How to Build an E-Commerce Store on Udemey.com. 
+PHP for Begginners: How to Build an E-Commerce Store on Udemy.com. 
 
 
 Functinality Included:
 
-Products:
+Products:\
 Display all products 
 Details for each product
 Display products in a specific category
@@ -38,7 +38,6 @@ General:
 Costomers can send email through contact us page
 
 
-
 Databse Instructions:
 
 1- Setup :
@@ -52,7 +51,7 @@ Databse host: localhost
 CREATE TABLE categories (
 cat_id INT(11) AUTO_INCREMENT PRIMARY KEY,
 cat_title VARCHAR(255) NOT NULL
-)
+);
 
 CREATE TABLE products (
 product_id INT(11) AUTO_INCREMENT PRIMARY KEY,
@@ -63,7 +62,7 @@ product_quantity int(11),
 product_description text,
 product_image varchar(255),
 short_desc text,
-)
+);
 
 CREATE TABLE orders (
 order_id INT(11) AUTO_INCREMENT PRIMARY KEY,
@@ -71,7 +70,7 @@ order_amount float,
 order_ts VARCHAR(255),
 order_status VARCHAR(255),
 order_currency VARCHAR(255)
-)
+);
 
 CREATE TABLE reports (
 report_id INT(11)  AUTO_INCREMENT PRIMARY KEY,
@@ -80,7 +79,7 @@ order_id int(11) FOREGIN KEY REFERENCES orders(order_id),
 product_price float,
 product_title varchar(255),
 product_quantity int(11)
-)
+);
 
 CREATE TABLE users (
 user_id INT(11)  AUTO_INCREMENT PRIMARY KEY,
@@ -88,7 +87,7 @@ username VARCHAR(255),
 email varchar(255),
 password varchar(255),
 user_photo varchar(255)
-)
+);
 
 3- Create admin:
 
