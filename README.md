@@ -2,7 +2,7 @@
 
 
 
-A simple php e-commerce website, part of the course:
+A simple PHP e-commerce website, part of the course:
 
 PHP for Begginners: How to Build an E-Commerce Store. 
 
@@ -20,13 +20,13 @@ Add product to cart\
 Remove product from cart\
 Dispalay cart \
 Increase/decrease product quantity in cart\
-View final invoice(total price) in cart
+View final invoice
 
 
 Payment(Paypal API for Payment Processing):\
 Users can pay using PayPal (sandbox)\
 Redirect back to website once payment is done  \
-View payment details in admin site
+Adims can view payment details in admin site
 
 
 Admin site:\
@@ -39,9 +39,11 @@ No dashboard
 
 
 General:\
-Costomers can send email through contact us page
+Costomers can send an email to the store through contact us page
 
 UI was designed and built by course instructore
+
+
 
 
 Databse Instructions:
